@@ -3,7 +3,7 @@ import './styles.css';
 import { Card } from 'react-bootstrap';
 import moment from 'moment';
 
-const WeatherCard = ({weatherData}) => (
+const Weather = ({weatherData}) => (
   <Card >
     <Card.Header className="header bg-secondary text-light">City Name: {weatherData.name}</Card.Header>
     <Card.Body className = "bg-primary">
@@ -18,4 +18,4 @@ const WeatherCard = ({weatherData}) => (
   </Card>
 )
 
-export default WeatherCard;
+export default Weather;
