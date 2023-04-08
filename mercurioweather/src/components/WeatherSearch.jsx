@@ -14,7 +14,7 @@ const WeatherSearch = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const geoUrl = `${process.env.REACT_APP_GEO_API_URL}&appid=${process.env.REACT_APP_API_KEY}&q=${query}`
+        const geoUrl = `${process.env.REACT_APP_GEO_API_URL}&q=${query}&appid=${process.env.REACT_APP_API_KEY}`
 
         const fetchWeatherData = async (url) => {
             try{

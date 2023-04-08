@@ -25,7 +25,7 @@ const Weather = () => {
 
     if (coordinates.length > 0) {
       const queryParam = new URLSearchParams(coordinates[0]).toString();
-      fetchData(`${process.env.REACT_APP_API_URL}&appid=${process.env.REACT_APP_API_KEY}&units=metric&${queryParam}`);
+      fetchData(`${process.env.REACT_APP_API_URL}${queryParam}&units=metric&appid=${process.env.REACT_APP_API_KEY}`);
     }
   }, [coordinates]);
 
