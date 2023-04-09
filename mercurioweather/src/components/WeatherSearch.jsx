@@ -1,7 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import Weather from './Weather'
 import DailyWeather from './DailyWeather'
+import './styles.css'
 
 const WeatherSearch = () => {
     const [query, setQuery] = useState("")
@@ -36,10 +38,10 @@ const WeatherSearch = () => {
     }
 
     return (
-        <div className="container">
-          <div className="row">
+        <div style={{backgroundImage: 'linear-gradient(180deg, blue, forestgreen)'}} className="container">
+          <div  className="row">
             <div className="col-12">
-              <h1>Mercurio Weather</h1>
+              <h1 >Mercurio Weather</h1>
             </div>
             <div className="col-12">
               <form className="border-bottom border-3 pb-2" onSubmit={handleSubmit}>
@@ -54,7 +56,7 @@ const WeatherSearch = () => {
               </form>
             </div>
           </div>
-            <div class="row">
+            <div className="row">
             <div className="col-6 ">
               <Weather />
             </div>

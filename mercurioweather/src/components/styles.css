@@ -15,17 +15,13 @@
     font-family: 'Recursive', sans-serif;
 }
 
-.day{
-    padding: 15px;
-    color: whitesmoke;
-    font-family: 'Recursive', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-}
-
 .temp{
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
+}
+
+#mySite {
+    background-image: linear-gradient(180 deg, blue, forestgreen);
 }

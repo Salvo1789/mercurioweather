@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import './styles.css';
@@ -32,16 +33,16 @@ const Weather = () => {
 
 return (
   (data.length > 0 && (
-  <Card >
-    <Card.Header className="header bg-secondary text-light">City Name: {data[0].name}</Card.Header>
-    <Card.Body className = "bg-primary">
-        <p>Temperature: {data[0].main.temp} &deg;C</p>
-        <p>Sunrise: {new Date(data[0].sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
-        <p>Sunset: {new Date(data[0].sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
-        <p>Description: {data[0].weather[0].main}</p>
-        <p>Humidity: {data[0].main.humidity} %</p>
-        <p>Day: {moment().format('dddd')}</p>
-        <p>Date: {moment().format('LL')}</p>
+  <Card style={{backgroundImage: 'url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif")'}}>
+    <Card.Header className="header text-light">City Name: {data[0].name} <img src ={`http://openweathermap.org/img/w/${data[0].weather[0].icon}.png`} alt='weather description' width="120" height="120"/></Card.Header>
+    <Card.Body >
+        <p className="text-light">Temperature: {data[0].main.temp} &deg;C</p>
+        <p className="text-light">Sunrise: {new Date(data[0].sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
+        <p className="text-light">Sunset: {new Date(data[0].sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
+        <p className="text-light">Description: {data[0].weather[0].main}</p>
+        <p className="text-light">Humidity: {data[0].main.humidity} %</p>
+        <p className="text-light">Day: {moment().format('dddd')}</p>
+        <p className="text-light">Date: {moment().format('LL')}</p>
     </Card.Body>
   </Card>
   )
