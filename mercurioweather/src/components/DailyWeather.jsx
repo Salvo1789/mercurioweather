@@ -31,9 +31,9 @@ const DailyWeather = () => {
       return(
         (data.length > 0 && (
         <ListGroup>
-            {data[0].list.slice(1,6).map((day,i) => (
+            {data[0].list.slice(1,7).map((day,i) => (
                 <ListGroup.Item key={i} >
-                  <p>Day: {moment().add(i, 'days').format('dddd')}</p>
+                  <p>Day: {moment().add(i+1, 'days').format('dddd')}</p>
                     <p>Date: {moment().add(i, 'days').format('LL')}</p>
                     <p>Temperature: {day.main.temp}</p>
                     <p>Description: {day.weather[0].main} <img src ={`http://openweathermap.org/img/w/${day.weather[0].icon}.png`} alt='weather description' width="80" height="80"/></p>

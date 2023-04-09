@@ -44,7 +44,7 @@ const WeatherSearch = () => {
               <h1 >Mercurio Weather</h1>
             </div>
             <div className="col-12">
-              <form className="border-bottom border-3 pb-2" onSubmit={handleSubmit}>
+              <form className="pb-2" onSubmit={handleSubmit}>
                 <input
                   type="search"
                   id="search"
@@ -57,10 +57,10 @@ const WeatherSearch = () => {
             </div>
           </div>
             <div className="row">
-            <div className="col-6 ">
+            <div className="col-12 col-md-6 mb-2 mb-md-0">
               <Weather />
             </div>
-            <div className="col-6 ">
+            <div className="col-12 col-md-6 mt-2 mt-md-0">
                <DailyWeather />
             </div>
           </div>

@@ -4,6 +4,10 @@ import { useSelector } from "react-redux";
 import './styles.css';
 import { Card } from 'react-bootstrap';
 import moment from 'moment';
+import clear from './clear.mp4'
+import clouds from './clouds.mp4'
+import rain from './rain.mp4'
+import snow from './snow.mp4'
 
 const Weather = () => {
   const coordinates = useSelector((state) => state.coordinates)
@@ -33,9 +37,14 @@ const Weather = () => {
 
 return (
   (data.length > 0 && (
-  <Card style={{backgroundImage: 'url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif")'}}>
+    
+     <Card>
+    
     <Card.Header className="header text-light">City Name: {data[0].name} <img src ={`http://openweathermap.org/img/w/${data[0].weather[0].icon}.png`} alt='weather description' width="120" height="120"/></Card.Header>
     <Card.Body >
+    <video muted id="myVideo">
+    <source src={clear} type="video/mp4"/>
+    </video>
         <p className="text-light">Temperature: {data[0].main.temp} &deg;C</p>
         <p className="text-light">Sunrise: {new Date(data[0].sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
         <p className="text-light">Sunset: {new Date(data[0].sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
