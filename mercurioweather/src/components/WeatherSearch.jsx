@@ -32,11 +32,11 @@ const WeatherSearch = () => {
                     return data
                   }else{
                     console.log('Results fetching error')
+                    setErrorMessage('Unable to fetch weather data')
                   }
                   
             }catch(error){
-                setErrorMessage('Unable to fetch weather data')
-                setIsLoading(false)
+                console.log(error)
             }
         }
 
