@@ -15,6 +15,30 @@
     min-width: 100%;
 }
 
+@keyframes spinner{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid navy;
+    border-top: 10px solid forestgreen;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 350px
+}
 
 .card-clear-day{
     background-image: url("https://i.gifer.com/1r.gif");
