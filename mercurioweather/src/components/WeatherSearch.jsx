@@ -39,7 +39,7 @@ const WeatherSearch = () => {
     }
 
     return (
-        <div style={{backgroundImage: 'linear-gradient(180deg, blue, forestgreen)'}} className="container">
+        <div className="container">
           <div  className="row">
             <div className="col-12">
               <h1 >Mercurio Weather</h1>
