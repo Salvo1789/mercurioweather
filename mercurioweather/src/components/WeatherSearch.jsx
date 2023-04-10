@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import Weather from './Weather'
 import DailyWeather from './DailyWeather'
+import SiteFooter from './SiteFooter'
 import './styles.css'
 
 const WeatherSearch = () => {
@@ -62,6 +63,11 @@ const WeatherSearch = () => {
             </div>
             <div className="col-12 col-md-6 mt-2 mt-md-0">
                <DailyWeather />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12">
+              <SiteFooter />
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import './styles.css';
-import { Card } from 'react-bootstrap';
-import moment from 'moment';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
+import './styles.css'
+import { Card } from 'react-bootstrap'
+import moment from 'moment'
 
 
 const Weather = () => {

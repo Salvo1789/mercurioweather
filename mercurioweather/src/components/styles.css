@@ -52,3 +52,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+footer {
+    position: fixed;
+    background-color: rgb(81, 85, 98);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    text-align: center;
+  }
