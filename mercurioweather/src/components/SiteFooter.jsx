@@ -1,4 +1,4 @@
-import React, { Container, Col, Row } from 'react';
+import React from 'react';
 import './styles.css'
 
 const SiteFooter = () => {
