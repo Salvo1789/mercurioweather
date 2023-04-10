@@ -43,10 +43,12 @@ return (
     <Card.Header className="header text-light">City Name: {data[0].name} <img src ={`http://openweathermap.org/img/w/${data[0].weather[0].icon}.png`} alt='weather description' width="120" height="120"/></Card.Header>
     <Card.Body >
         <p className="text-light">Temperature: {data[0].main.temp} &deg;C</p>
+        <p className="text-light">Min/Max Temp: {data[0].main.temp_min.toFixed(0)}° / {data[0].main.temp_max.toFixed(0)}°</p>
         <p className="text-light">Sunrise: {new Date(data[0].sys.sunrise * 1000).toLocaleTimeString('en-IN')}</p>
         <p className="text-light">Sunset: {new Date(data[0].sys.sunset * 1000).toLocaleTimeString('en-IN')}</p>
         <p className="text-light">Description: {data[0].weather[0].main}</p>
         <p className="text-light">Humidity: {data[0].main.humidity} %</p>
+        <p className="text-light">Pressure: {data[0].main.pressure} hPa</p>
         <p className="text-light">Day: {moment().format('dddd')}</p>
         <p className="text-light">Date: {moment().format('LL')}</p>
     </Card.Body>
