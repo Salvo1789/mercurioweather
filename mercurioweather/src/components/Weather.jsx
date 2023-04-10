@@ -4,10 +4,7 @@ import { useSelector } from "react-redux";
 import './styles.css';
 import { Card } from 'react-bootstrap';
 import moment from 'moment';
-import clear from './clear.mp4'
-import clouds from './clouds.mp4'
-import rain from './rain.mp4'
-import snow from './snow.mp4'
+
 
 const Weather = () => {
   const coordinates = useSelector((state) => state.coordinates)
@@ -39,7 +36,7 @@ return (
   (data.length > 0 && (
     
      <Card className={
-      (data[0].weather[0].main == 'Clear') ? 'card-clear' :
+      (data[0].weather[0].main == 'Clear') ? ((data[0].weather[0].icon) == '01d' ? 'card-clear-day' : 'card-clear-night') :
       ((data[0].weather[0].main == 'Clouds') ? 'card-cloudy' :
       ((data[0].weather[0].main == 'Rain') ? 'card-rain' : 'card-snow'))
      }>
