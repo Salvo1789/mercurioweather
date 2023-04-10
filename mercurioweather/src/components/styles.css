@@ -7,7 +7,7 @@
 }
 
 .header{
-    background-color: #424242;
+    background: rgba(43, 45, 43, 0.3);
     color: whitesmoke;
     padding: 10px;
     font-size: 28px;
