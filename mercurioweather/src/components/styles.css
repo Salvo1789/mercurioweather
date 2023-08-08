@@ -48,38 +48,51 @@
     background-image: url("https://i.gifer.com/1r.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    border: solid black 3px;
+    border-radius: 5px;
 }
 
 .card-clear-night{
     background-image: url("https://bestanimations.com/media/sky/1088683783milky-way-night-sky-gif.gif#.ZDPeeluHft8.link");
     background-size: cover;
     background-repeat: no-repeat;
+    border: solid black 3px;
+    border-radius: 5px;
 }
 
 .card-cloudy{
     background-image: url("https://www.adventurebikerider.com/wp-content/uploads/2017/10/tumblr_o27c7fByaO1tchrkco1_500.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    border: solid black 3px;
+    border-radius: 5px;
 }
 
 .card-rain{
     background-image: url("https://media.tenor.com/fQT87D-F3X0AAAAd/tenor.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    border: solid black 3px;
+    border-radius: 5px;
 }
 
 .card-snow{
     background-image: url("https://i.gifer.com/67Z.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    border: solid black 3px;
+    border-radius: 5px;
 }
+
 
 footer {
     position: fixed;
+    width: 100vw;
     background-color: rgb(81, 85, 98);
     bottom: 0;
     left: 0;
     right: 0;
     padding: 8px;
+    margin-top: 2rem;
     text-align: center;
   }

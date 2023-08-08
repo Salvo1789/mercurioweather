@@ -30,9 +30,9 @@ const DailyWeather = () => {
       console.log(data)
       return(
         (data.length > 0 && (
-        <ListGroup>
+        <ListGroup className="mb-5">
             {data[0].list.slice(1,7).map((day,i) => (
-                <ListGroup.Item key={i} style={{backgroundImage: 'linear-gradient(180deg, forestgreen, blue)'}}>
+                <ListGroup.Item key={i} style={{ background: "transparent", border: "solid white 3px", borderRadius: "5px"}}>
                   <p className="text-light">Day: {moment().add(i+1, 'days').format('dddd')}</p>
                     <p className="text-light">Date: {moment().add(i, 'days').format('LL')}</p>
                     <p className="text-light">Temperature: {day.main.temp}</p>

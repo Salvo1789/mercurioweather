@@ -36,9 +36,9 @@ return (
   (data.length > 0 && (
     
      <Card className={
-      (data[0].weather[0].main == 'Clear') ? ((data[0].weather[0].icon) == '01d' ? 'card-clear-day' : 'card-clear-night') :
-      ((data[0].weather[0].main == 'Clouds') ? 'card-cloudy' :
-      ((data[0].weather[0].main == 'Rain') ? 'card-rain' : 'card-snow'))
+      (data[0].weather[0].main === 'Clear') ? ((data[0].weather[0].icon) === '01d' ? 'card-clear-day' : 'card-clear-night') :
+      ((data[0].weather[0].main === 'Clouds') ? 'card-cloudy' :
+      ((data[0].weather[0].main === 'Rain') ? 'card-rain' : 'card-snow'))
      }>
     <Card.Header className="header text-light">City Name: {data[0].name} <img src ={`http://openweathermap.org/img/w/${data[0].weather[0].icon}.png`} alt='weather description' width="120" height="120"/></Card.Header>
     <Card.Body >
