@@ -15,7 +15,7 @@ A weather web-app which lets user check the weather for every city written in th
   * Day
   * Date
 
-*General weather forecast of the next 6 days which shows following info:
+* General weather forecast of the next 6 days which shows following info:
   * Day
   * Date
   * Temperature
